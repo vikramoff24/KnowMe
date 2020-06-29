@@ -23,6 +23,19 @@ $background-opacity:0.9;
     }
 }
 }
+
+// function- which returns value, Mixin does not return anything
+//set text color
+@function set-text-color($color)
+{
+  @if(lightness($color)>40)
+  {
+    @return #000;
+      }
+      @else{
+      @return #fff;
+      }
+}
 @mixin easeOut
 {
     transition:all 0.5s ease-out;

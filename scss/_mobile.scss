@@ -40,6 +40,15 @@ ul.menu-nav,div.menu-branding{
     height:150px;
   }
 }
+.about-info{
+  grid-template-areas:
+  'bioimage'
+  'bio'
+  'skill1'
+  'skill2'
+  'skill3';
+  grid-template-columns:1fr; 
+}
 }
 //Smartphones
 @include mediaSm{

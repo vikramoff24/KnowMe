@@ -1,6 +1,6 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
+
 // this does not let the size the element change while padding
 *{
   box-sizing:border-box;
@@ -9,7 +9,7 @@
 body{
   @include background;
   background: $primary-color;
-  color:#fff;
+  color:set-text-color($primary-color);
   height: 100%;
   margin:0;
   font-family: 'Segoe UI', Tahoma,Geneva, Verdana, sans-serif;
@@ -43,7 +43,8 @@ color:$secondary-color;
 }
 main{
   padding: 4rem;
-  height:100%;
+  //height:100%;
+  min-height:calc(100vh - 60px);
   .icons{
     margin-top:1rem;
     a{
@@ -61,3 +62,58 @@ main{
     }
   }
 }
+.about-info{
+  display: grid;
+  grid-gap:30px;
+  grid-template-areas:
+  'bioimage bio bio'
+  'skill1 skill2 skill3';
+  grid-template-columns: repeat(3,1fr);
+  .bio-image{
+    grid-area:bioimage;
+    margin:auto;
+    border-radius: 50%;
+    border:$secondary-color 3px solid;
+  }
+  .bio
+  {
+    grid-area:bio;
+    font-size:1.5rem;
+  }
+  .skill-1
+  {
+    grid-area:skill1;
+  }
+  .skill-2
+  {
+    grid-area:skill2;
+  }
+  .skill-3
+  {
+    grid-area:skill3;
+  }
+  .skill {
+    background: lighten($primary-color,5);
+    padding:0.5rem;
+    border-bottom: $secondary-color 5px solid;
+  padding :0px;
+    h3
+    {
+      background: $secondary-color;
+      margin:0;
+      padding:10px;
+      color:set-text-color($secondary-color);
+    font-family: 'Noto Sans JP', sans-serif;
+    }
+  }
+
+}
+#main-footer
+{
+  text-align:center;
+  padding:1rem;
+  background:darken($primary-color,10);
+  color:set-text-color($primary-color);
+  height:60px;
+}
+@import 'mobile';
