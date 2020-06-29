@@ -1,9 +1,14 @@
 //widescreen
 @include mediaXl{
-
+.projects{
+  grid-template-columns: repeat(4,1fr);
+}
 }
 //Destops & Laptops
 @include mediaLg{
+  .projects{
+    grid-template-columns: repeat(3,1fr);
+  }
 
 }
 //Tablets & Small Laptops
@@ -47,7 +52,10 @@ ul.menu-nav,div.menu-branding{
   'skill1'
   'skill2'
   'skill3';
-  grid-template-columns:1fr; 
+  grid-template-columns:1fr;
+}
+.projects{
+  grid-template-columns: repeat(2,1fr);
 }
 }
 //Smartphones
@@ -55,5 +63,9 @@ ul.menu-nav,div.menu-branding{
 main#home h1
 {
   margin-top:10vh;
+
+}
+.projects{
+  grid-template-columns:1fr;
 }
 }
