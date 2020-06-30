@@ -205,6 +205,9 @@ main {
   grid-template-columns: repeat(2, 1fr);
   margin: auto; }
 
+.skill-content {
+  padding: 10px; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;

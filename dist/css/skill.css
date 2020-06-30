@@ -5,7 +5,7 @@
     list-style: none;
     margin: 30px 0;
     font-weight: 500;
-    text-transform: uppercase;
+
 }
 
  .container li:before {
@@ -28,46 +28,154 @@
     height: 15px;
     background-color: rgba(13, 160, 211, 1);
     border-radius: 1000px;
-    animation-duration: .7s;
+    animation-duration: 1.8s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 
-li.html:after {
-    animation-name: html;
+li.Android:after {
+    animation-name: Android;
 }
 
-@keyframes html {
+@keyframes Android {
+    to {
+        width: 70%;
+    }
+}
+li.Bootstrap:after {
+    animation-name: Bootstrap;
+}
+
+@keyframes Bootstrap {
     to {
         width: 90%;
     }
 }
-
-li.css:after {
-    animation-name: css;
+li.C:after {
+    animation-name: C;
 }
 
-@keyframes css {
+@keyframes C {
     to {
         width: 80%;
     }
 }
-
-li.js:after {
-    animation-name: js;
+li.CPP:after {
+    animation-name: CPP;
 }
 
-@keyframes js {
+@keyframes CPP{
+    to {
+        width: 80%;
+    }
+}
+li.CSS:after {
+    animation-name: CSS;
+}
+
+@keyframes CSS {
+    to {
+        width: 85%;
+    }
+}
+li.EJS:after {
+    animation-name: EJS;
+}
+
+@keyframes EJS {
+    to {
+        width: 80%;
+    }
+}
+li.Expressjs:after {
+    animation-name: Expressjs;
+}
+
+@keyframes Expressjs {
+    to {
+        width: 70%;
+    }
+}
+li.HTML:after {
+    animation-name:HTML;
+}
+
+@keyframes HTML {
+    to {
+        width: 95%;
+    }
+}
+li.Java:after {
+    animation-name: Java;
+}
+
+@keyframes Java {
+    to {
+        width: 70%;
+    }
+}
+li.JavaScript:after {
+    animation-name: JavaScript;
+}
+
+@keyframes JavaScript {
+    to {
+        width: 80%;
+    }
+}
+li.JQuery:after {
+    animation-name: JQuery;
+}
+
+@keyframes JQuery {
+    to {
+        width: 80%;
+    }
+}
+li.Kotlin:after {
+    animation-name: Kotlin;
+}
+
+@keyframes Kotlin {
+    to {
+        width: 65%;
+    }
+}
+li.Nodejs:after {
+    animation-name: Nodejs;
+}
+
+@keyframes Nodejs {
     to {
         width: 75%;
     }
 }
-
-li.ng:after {
-    animation-name: ng;
+li.Python:after {
+    animation-name: Python;
 }
 
-@keyframes ng {
+@keyframes Python {
+    to {
+        width: 70%;
+    }
+}
+
+li.Spring:after {
+    animation-name: Spring;
+}
+
+@keyframes Spring {
     to {
         width: 60%;
     }
+}
+
+li.SQL:after {
+    animation-name: SQL;
+}
+
+@keyframes SQL {
+    to {
+        width: 85%;
+    }
+}
