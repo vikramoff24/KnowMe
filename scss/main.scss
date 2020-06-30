@@ -21,7 +21,7 @@ h1,h2,h3{
   font-weight: 400;
   //h1.lg-heading - replacement
   &.lg-heading{
-    font-size:6rem;
+    font-size:5rem;
   }
     &.sm-heading{
       margin-bottom:2rem;
@@ -44,7 +44,7 @@ color:$secondary-color;
 main{
   padding: 4rem;
   //height:100%;
-  min-height:calc(100vh - 60px);
+  min-height:calc(100vh - 40px);
   .icons{
     margin-top:1rem;
     a{
@@ -70,6 +70,8 @@ main{
   'skill1 skill2 skill3';
   grid-template-columns: repeat(3,1fr);
   .bio-image{
+    height:200px;
+    width:200px;
     grid-area:bioimage;
     margin:auto;
     border-radius: 50%;
@@ -78,7 +80,7 @@ main{
   .bio
   {
     grid-area:bio;
-    font-size:1.5rem;
+    font-size:1.2rem;
   }
   .skill-1
   {
@@ -122,6 +124,13 @@ main{
       @include easeOut;
     }
   }
+}
+//skill page
+.container{
+  display: grid;
+  grid-gap:0.5rem;
+  grid-template-columns: repeat(2,1fr);
+  margin: auto;
 }
 //contact page
 .boxes{
@@ -177,9 +186,10 @@ main{
 #main-footer
 {
   text-align:center;
-  padding:1rem;
+  padding:10px;
   background:darken($primary-color,10);
   color:set-text-color($primary-color);
-  height:60px;
+  height:40px;
+  font-size: 15px;
 }
 @import 'mobile';

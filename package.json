@@ -4,7 +4,7 @@
   "description": "Personal responsive portfolio website",
   "main": "\\",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/main.css --recursive"
   },
   "author": "Vikram S",
   "license": "ISC",

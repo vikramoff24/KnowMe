@@ -57,6 +57,11 @@ ul.menu-nav,div.menu-branding{
 .projects{
   grid-template-columns: repeat(2,1fr);
 }
+.container
+{
+  grid-template-columns: 1fr;
+
+}
 }
 //Smartphones
 @include mediaSm{
@@ -64,6 +69,9 @@ main#home h1
 {
   margin-top:10vh;
 
+}
+.lg-heading{
+  font-size:2rem;
 }
 .projects{
   grid-template-columns:1fr;
